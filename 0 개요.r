@@ -1,10 +1,6 @@
-# working directory
-setwd("/users/kith27/library/mobile documents/com~apple~clouddocs/2019-1/통계자료분석캡스톤디자인")
-setwd("C:/Users/kith2/iCloudDrive/2019-1/통계자료분석캡스톤디자인")
-
-load("capston.RData")
-
-save.image("capston.RData")
+#
+load("mentalcare.RData")
+save.image("mentalcare.RData")
 
 # 투수코치, 감독이 올라왔을 때 실점하지않고 자신이 맡은 이닝을 잘 마무리하는지를 보고싶다.
 

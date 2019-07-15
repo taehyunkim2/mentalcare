@@ -53,7 +53,7 @@ while(i <= length(schedule_raw[,1]))
 i <- 1
 while(i <= length(schedule_raw[,1]))
 {
-  schedule_raw[i, 3] <- as.Date(schedule_raw[i,2], format="%A, %B %d, %Y") + 1
+  schedule_raw[i, 3] <- as.Date(schedule_raw[i,2], format = "%A, %B %d, %Y") + 1
   i <- i+1
 }
 
