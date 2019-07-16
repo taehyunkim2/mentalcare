@@ -1,4 +1,6 @@
 # ppt 자료
+library(ggplot2)
+
 plot(climbed_team[, 11], climbed_team[, 25])
 cor(climbed_team[, 11], climbed_team[, 25])
 plot(trimmed_climbing[, "margin"], trimmed_climbing[, "inning"])

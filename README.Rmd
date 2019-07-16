@@ -1,22 +1,23 @@
 ---
-title: "for R studying"
+title: "Mentalcare for MLB Pitcher 2018"
 output: github_document
+runtime : shiny
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## GitHub Documents
+## Coach / Manager Climbing on Mound Analysis
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+I want to know how each coach and manager influences their pitcher when they climbed the mound.
 
 ## Including Code
 
 You can include R code in the document as follows:
 
-```{r cars}
-summary(cars)
+```{r trimmed_climbing}
+summary(trimmed_climbing)
 ```
 
 ## Including Plots
