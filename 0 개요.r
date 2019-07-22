@@ -15,7 +15,7 @@ ggplot(trimmed_climbing, aes(x=margin)) + geom_histogram()
 sum(trimmed_climbing[, "C/M"] == "coach")
 sum(trimmed_climbing[, "C/M"] == "manager")
 # team
-ggplot(trimmed_climbing, aes(x=team)) + geom_histogram(stat="count")
+ggplot(trimmed_climbing, aes(x=team)) + geom_histogram(stat="count", fill="white", color="red")
 # starter vs. reliever
 sum(trimmed_climbing[, "S/R"] == "starter")
 sum(trimmed_climbing[, "S/R"] == "bullpen")
@@ -27,7 +27,7 @@ plot(as.factor(teams), climbed_team[, "total_starter"]/climbed_team[,"total_bull
 # 선발은 실점률, 불펜은 성공률로 보자
 writexl::write_xlsx(climbed_team, path = "climbed_team.xlsx")
 ## 선발
-# 누가 제일 많이 올라왔는지
+# 누가 제일 많이 올라왔는지 
 summary(as.factor(trimmed_climbing[which(trimmed_climbing[, 13] == "starter"), "team_pitcher"]))
 # 위 투수들의 실점률 상승분은? 개인별 성적과 비교
 summary(as.factor(trimmed_climbing[which(trimmed_climbing[, 13] == "starter"), "team_pitcher"]))[1:5]
