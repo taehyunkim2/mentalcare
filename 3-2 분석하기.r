@@ -1,3 +1,4 @@
+# by pithcers
 climbed_pitcher <- data.frame(as.character(unique(trimmed_climbing[, "team_pitcher"])))
 for(pitcher_num in 1:length(climbed_pitcher[, 1]))
 {
@@ -8,8 +9,9 @@ for(pitcher_num in 1:length(climbed_pitcher[, 1]))
   climbed_pitcher[pitcher_num, 6] <- sum(trimmed_climbing[, "team_pitcher"] == climbed_pitcher[pitcher_num, 1])
   climbed_pitcher[pitcher_num, 7] <- climbed_pitcher[pitcher_num, 5] / climbed_pitcher[pitcher_num, 6]
 }
+names(climbed_pitcher) <- c("name", "run", "out_count", "ra", "F", "climbed_count", "S/F")
 
-# 팀별
+# by teams
 climbed_team <- data.frame(teams, teamscode) # 1, 2열 팀명
 for(team_num in 1:length(climbed_team[, 1]))
 {

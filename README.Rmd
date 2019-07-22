@@ -8,6 +8,13 @@ runtime : shiny
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## 목차
+
+데이터는 어떻게 얻었나
+분석툴은 R
+척도는 실점, 스케일은 정규이닝까지
+에러를 더이상 파악하기 힘듦, 연장에서는 다른 마음과짐과 수싸움이 많음. -> 9이닝까지로 좁히자
+
 ## Coach / Manager Climbing on Mound Analysis
 
 I want to know how each coach and manager influences their pitcher when they climbed the mound.
@@ -17,7 +24,7 @@ I want to know how each coach and manager influences their pitcher when they cli
 You can include R code in the document as follows:
 
 ```{r trimmed_climbing}
-summary(trimmed_climbing)
+summary(cars)
 ```
 
 ## Including Plots
