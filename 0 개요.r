@@ -1,4 +1,4 @@
-# data
+# data ver. 20191027
 load("mentalcare.RData")
 save.image("mentalcare.RData")
 
