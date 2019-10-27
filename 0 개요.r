@@ -1,4 +1,4 @@
-# data ver. 20191027
+# data ver. 20191027 new macbook
 load("mentalcare.RData")
 save.image("mentalcare.RData")
 
